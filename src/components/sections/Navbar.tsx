@@ -1,10 +1,19 @@
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const navLinks = [
+    { name: "Features", href: "/features" },
+    { name: "Marketplace", href: "/marketplace" },
+    { name: "Community", href: "/community" },
+    { name: "Elections", href: "/elections" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
+  ];
 
   return (
     <motion.nav
@@ -16,27 +25,24 @@ export const Navbar = () => {
       <div className="container mx-auto max-w-6xl px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent-pink flex items-center justify-center">
               <span className="text-white font-bold text-sm">DR</span>
             </div>
             <span className="font-bold text-xl text-foreground">Dorm Revamp</span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
-              Features
-            </a>
-            <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
-              About
-            </a>
-            <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
-              Contact
-            </a>
-            <Button variant="hero" size="sm">
-              Download App
-            </Button>
+          <div className="hidden md:flex items-center gap-6">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                to={link.href}
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              >
+                {link.name}
+              </Link>
+            ))}
           </div>
 
           {/* Mobile menu button */}
@@ -57,30 +63,16 @@ export const Navbar = () => {
             className="md:hidden py-4 border-t border-white/5"
           >
             <div className="flex flex-col gap-4">
-              <a
-                href="#features"
-                className="text-muted-foreground hover:text-foreground transition-colors py-2"
-                onClick={() => setIsOpen(false)}
-              >
-                Features
-              </a>
-              <a
-                href="#about"
-                className="text-muted-foreground hover:text-foreground transition-colors py-2"
-                onClick={() => setIsOpen(false)}
-              >
-                About
-              </a>
-              <a
-                href="#contact"
-                className="text-muted-foreground hover:text-foreground transition-colors py-2"
-                onClick={() => setIsOpen(false)}
-              >
-                Contact
-              </a>
-              <Button variant="hero" size="sm" className="w-full">
-                Download App
-              </Button>
+              {navLinks.map((link) => (
+                <Link
+                  key={link.name}
+                  to={link.href}
+                  className="text-muted-foreground hover:text-foreground transition-colors py-2"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              ))}
             </div>
           </motion.div>
         )}

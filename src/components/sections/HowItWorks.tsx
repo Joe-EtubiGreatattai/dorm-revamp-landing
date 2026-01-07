@@ -1,18 +1,18 @@
 import { motion } from "framer-motion";
-import { Download, Smartphone, Rocket } from "lucide-react";
+import { Rocket, Smartphone, UserPlus } from "lucide-react";
 
 const steps = [
   {
-    icon: Download,
+    icon: UserPlus,
     step: "01",
-    title: "Download the App",
-    description: "Get Dorm Revamp from the App Store or Google Play. It's free and takes seconds.",
+    title: "Create Your Account",
+    description: "Sign up with your university credentials and verify your student status in seconds.",
   },
   {
     icon: Smartphone,
     step: "02",
-    title: "Sign Up with Your .edu",
-    description: "Verify your student status with your university email. Access all campus features instantly.",
+    title: "Verify Your Identity",
+    description: "Access all secure campus features instantly after a quick .edu email verification.",
   },
   {
     icon: Rocket,
@@ -38,7 +38,7 @@ export const HowItWorks = () => {
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mt-4 mb-6">
             Get Started in{" "}
-            <span className="bg-gradient-to-r from-primary to-accent-amber bg-clip-text text-transparent">
+            <span className="text-[#FF4500]">
               3 Easy Steps
             </span>
           </h2>
@@ -50,7 +50,7 @@ export const HowItWorks = () => {
         {/* Steps */}
         <div className="grid md:grid-cols-3 gap-8 relative">
           {/* Connection line */}
-          <div className="hidden md:block absolute top-24 left-1/6 right-1/6 h-0.5 bg-gradient-to-r from-primary/20 via-accent-pink/20 to-accent-amber/20" />
+          <div className="hidden md:block absolute top-24 left-1/6 right-1/6 h-0.5 bg-[#FF4500]/20" />
 
           {steps.map((step, index) => (
             <motion.div
@@ -65,11 +65,11 @@ export const HowItWorks = () => {
               <div className="relative inline-block mb-6">
                 <motion.div
                   whileHover={{ scale: 1.1, rotate: 5 }}
-                  className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-accent-pink flex items-center justify-center mx-auto shadow-lg shadow-primary/20"
+                  className="w-20 h-20 rounded-2xl bg-[#FF4500] flex items-center justify-center mx-auto shadow-lg shadow-[#FF4500]/20"
                 >
                   <step.icon className="w-10 h-10 text-white" />
                 </motion.div>
-                <span className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-background border-2 border-primary text-primary text-sm font-bold flex items-center justify-center">
+                <span className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-background border-2 border-[#FF4500] text-[#FF4500] text-sm font-bold flex items-center justify-center">
                   {step.step}
                 </span>
               </div>
