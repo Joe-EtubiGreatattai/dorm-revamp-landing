@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./pages/About";
 import Community from "./pages/Community";
 import Contact from "./pages/Contact";
+import DeleteAccount from "./pages/DeleteAccount";
 import Elections from "./pages/Elections";
 import Features from "./pages/Features";
 import Index from "./pages/Index";
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />
+          <Route path="/delete-account" element={<DeleteAccount />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
