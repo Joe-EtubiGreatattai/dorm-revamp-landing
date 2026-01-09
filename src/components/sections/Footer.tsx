@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Instagram, Twitter, Linkedin, Github } from "lucide-react";
+import { Github, Instagram, Linkedin, Twitter } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -10,9 +10,9 @@ export const Footer = () => {
           <div className="flex flex-col items-center md:items-start gap-2">
             <a href="/" className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent-pink flex items-center justify-center">
-                <span className="text-white font-bold text-sm">DR</span>
+                <span className="text-white font-bold text-sm">D</span>
               </div>
-              <span className="font-bold text-xl text-foreground">Dorm Revamp</span>
+              <span className="font-bold text-xl text-foreground">Dorm</span>
             </a>
             <p className="text-sm text-muted-foreground">
               Your Campus. One App.
@@ -42,10 +42,10 @@ export const Footer = () => {
 
         {/* Bottom bar */}
         <div className="mt-8 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p>© 2026 Dorm Revamp. All rights reserved.</p>
+          <p>© 2026 Dorm. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-foreground transition-colors">Terms of Service</a>
+            <a href="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</a>
+            <a href="/terms-of-use" className="hover:text-foreground transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>

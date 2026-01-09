@@ -15,7 +15,7 @@ const About = () => {
                         transition={{ duration: 0.5 }}
                         className="text-center mb-20"
                     >
-                        <h1 className="text-4xl md:text-6xl font-bold mb-6">About <span className="text-[#FF4500]">Dorm Revamp</span></h1>
+                        <h1 className="text-4xl md:text-6xl font-bold mb-6">About <span className="text-[#FF4500]">Dorm</span></h1>
                         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                             We're on a mission to redefine the African campus experience through innovation, community, and secure technology.
                         </p>
@@ -68,7 +68,7 @@ const About = () => {
                         </div>
                         <h2 className="text-3xl font-bold mb-6">The Journey to Better Campus Life</h2>
                         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                            Dorm Revamp was born out of a simple observation: campus life is fragmented. We've built the one tool to fix it, ensuring you spend less time on logistics and more time on what matters—your growth.
+                            Dorm was born out of a simple observation: campus life is fragmented. We've built the one tool to fix it, ensuring you spend less time on logistics and more time on what matters—your growth.
                         </p>
                     </motion.div>
                 </div>

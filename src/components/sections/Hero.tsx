@@ -85,7 +85,7 @@ export const Hero = () => {
           className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
         >
           From booking your next dorm to trading essentials and voting in
-          digital elections — Dorm Revamp is your ultimate campus companion.
+          digital elections — Dorm is your ultimate campus companion.
         </motion.p>
 
         {/* CTA Buttons */}

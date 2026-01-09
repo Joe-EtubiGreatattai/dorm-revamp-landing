@@ -27,9 +27,9 @@ export const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent-pink flex items-center justify-center">
-              <span className="text-white font-bold text-sm">DR</span>
+              <span className="text-white font-bold text-sm">D</span>
             </div>
-            <span className="font-bold text-xl text-foreground">Dorm Revamp</span>
+            <span className="font-bold text-xl text-foreground">Dorm</span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -70,7 +70,7 @@ const Community = () => {
                     >
                         <h2 className="text-3xl font-bold mb-6">Built for Every Student</h2>
                         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                            Dorm Revamp isn't just an app—it's a digital campus experience designed to make your student life more connected and productive.
+                            Dorm isn't just an app—it's a digital campus experience designed to make your student life more connected and productive.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
                             {["School Specific", "Vetted Users", "Instant Updates", "Safe & Secure"].map((tag) => (

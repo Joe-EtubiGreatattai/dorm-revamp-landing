@@ -33,7 +33,7 @@ export const CTA = () => {
           </h2>
 
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Join thousands of students already using Dorm Revamp. Get started today and experience the future of campus living.
+            Join thousands of students already using Dorm. Get started today and experience the future of campus living.
           </p>
 
           <div className="flex justify-center">

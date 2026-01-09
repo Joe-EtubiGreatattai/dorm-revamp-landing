@@ -53,7 +53,7 @@ const Marketplace = () => {
                     >
                         <h2 className="text-3xl font-bold mb-6">Experience Frictionless Trading</h2>
                         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                            Whether you're clearing out your dorm or looking for an upgrade, Dorm Revamp makes campus commerce fast, safe, and incredibly simple.
+                            Whether you're clearing out your dorm or looking for an upgrade, Dorm makes campus commerce fast, safe, and incredibly simple.
                         </p>
                     </motion.div>
                 </div>

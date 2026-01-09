@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
-import { Home, ShoppingBag, UtensilsCrossed, Users, Vote, Wallet } from "lucide-react";
 import { FeatureCard } from "@/components/ui/FeatureCard";
+import { motion } from "framer-motion";
+import { Home, ShoppingBag, Users, UtensilsCrossed, Vote, Wallet } from "lucide-react";
 
 const features = [
   {
@@ -62,7 +62,7 @@ export const Features = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            From housing to hangouts, Dorm Revamp handles it all so you can focus on what matters — your education and experiences.
+            From housing to hangouts, Dorm handles it all so you can focus on what matters — your education and experiences.
           </p>
         </motion.div>
 

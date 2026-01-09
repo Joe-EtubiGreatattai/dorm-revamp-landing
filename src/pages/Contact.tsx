@@ -23,11 +23,11 @@ const Contact = () => {
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
                         {[
-                            { icon: Twitter, name: "Twitter / X", label: "@dormrevamp", href: "#", color: "text-blue-400" },
-                            { icon: Instagram, name: "Instagram", label: "@dormrevamp", href: "#", color: "text-pink-500" },
-                            { icon: Linkedin, name: "LinkedIn", label: "Dorm Revamp", href: "#", color: "text-blue-600" },
+                            { icon: Twitter, name: "Twitter / X", label: "@dorm", href: "#", color: "text-blue-400" },
+                            { icon: Instagram, name: "Instagram", label: "@dorm", href: "#", color: "text-pink-500" },
+                            { icon: Linkedin, name: "LinkedIn", label: "Dorm", href: "#", color: "text-blue-600" },
                             { icon: MessageCircle, name: "Community", label: "Join Discord", href: "#", color: "text-indigo-500" },
-                            { icon: Mail, name: "Email", label: "hello@dormrevamp.com", href: "mailto:hello@dormrevamp.com", color: "text-[#FF4500]" },
+                            { icon: Mail, name: "Email", label: "hello@dorm.com", href: "mailto:hello@dorm.com", color: "text-[#FF4500]" },
                         ].map((social, i) => (
                             <motion.a
                                 key={social.name}
