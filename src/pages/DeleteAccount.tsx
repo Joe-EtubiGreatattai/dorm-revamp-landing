@@ -18,7 +18,7 @@ const DeleteAccount = () => {
         setIsSubmitting(true);
 
         try {
-            const response = await fetch("http://localhost:5001/api/auth/request-data-deletion", {
+            const response = await fetch("https://dorm-revamp-backend.onrender.com/api/auth/request-data-deletion", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

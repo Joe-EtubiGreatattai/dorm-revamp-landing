@@ -31,6 +31,7 @@ const App = () => (
           <Route path="/elections" element={<Elections />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/support" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />
           <Route path="/delete-account" element={<DeleteAccount />} />
